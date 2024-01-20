@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    width: auto;
+    margin-right: 20px;
+  }
+
+  .card {
+    width: 45%;
+    margin-right: 20px;
+  }
+}
