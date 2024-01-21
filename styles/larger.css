@@ -1,11 +1,13 @@
 @media screen and (min-width: 768px) {
   nav {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   nav a {
-    width: auto;
-    margin-right: 20px;
+    width: 100%;
   }
 
   .card {
