@@ -1,0 +1,40 @@
+@media screen and (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card-last {
+    grid-column: 3;
+    justify-self: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    width: 95%;
+    height: fit-content;
+    min-height: 25vh;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  
+  .card-last h3 {
+    background-color: #3a4958;
+    width: 100%;
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  
+  .card-last img {
+      width: 100%;
+      margin-top: 20px;
+    }
+}
