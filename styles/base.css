@@ -39,6 +39,7 @@ main {
 }
 
 main h2 {
+  text-align: center;
   font-family: open sans;
   margin-top: 40px;
   font-size: 30px;
@@ -149,4 +150,12 @@ footer p {
   background-color: #bed;
   max-width: 580px;
   height: 100vh;
+}
+
+#main-separator{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }

@@ -11,8 +11,10 @@
   }
 
   .card {
-    width: 45%;
+    width: 95%;
+    height: 400px;
     margin-right: 20px;
+    justify-self: center;
   }
 
   h1 {
@@ -42,4 +44,15 @@
 	.stuff {
 		margin: 1rem auto;
 	}
+
+  #main-separator{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+
+  iframe{
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
 }
