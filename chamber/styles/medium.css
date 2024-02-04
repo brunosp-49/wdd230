@@ -1,0 +1,106 @@
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+    background-color: var(--main);
+  }
+  #mobileMenuButton {
+    margin: 0;
+    background-color: #353535;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+  }
+  .grid-container {
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 100%;
+  }
+
+  .current-events,
+  .company-spotlights {
+    grid-column: span 1;
+  }
+
+  .event-card,
+  .spotlight-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .weather-card {
+    width: 100%;
+  }
+
+  .company-spotlights {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .spotlight-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #desktopNav {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .social-container{
+    display: none;
+  }
+
+  #mobileMenuButton::before {
+    content: "☰";
+  }
+  
+  #mobileMenuButton.open::before {
+    content: "X";
+  }
+
+  #desktopNav {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    transform: translateY(100%);
+    transform: translateX(0%);
+    transition: transform 0.3s ease-out;
+  }
+
+  #desktopNav.open {
+    transform: translateY(0);
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  #desktopNav ul {
+    width: 100%;
+    background-color: var(--other2);
+    height: fit-content;
+    list-style: none;
+    padding: 0;
+    display: block;
+  }
+
+  #desktopNav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #desktopNav a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+  }
+}
