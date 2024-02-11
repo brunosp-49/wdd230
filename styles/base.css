@@ -159,3 +159,72 @@ footer p {
   align-items: center;
   justify-content: flex-start;
 }
+
+/* Dark Mode Switch Styles */
+.dark-mode-switch {
+  position: absolute;
+  top:  5px;
+  right:  60px;
+  z-index:  1000;
+}
+
+.dark-mode-switch input {
+  display: none;
+}
+
+.dark-mode-switch .slider {
+  position: relative;
+  display: inline-block;
+  width:  60px;
+  height:  34px;
+  background-color: #ccc;
+  border-radius:  34px;
+  cursor: pointer;
+  transition: background-color  0.4s;
+}
+
+
+.dark-mode-switch .slider:after {
+  content: '';
+  position: absolute;
+  width:  26px;
+  height:  26px;
+  left:  2px;
+  bottom:  2px;
+  background-color: white;
+  border-radius:  50%;
+  transition: transform  0.4s;
+}
+
+input:checked + .slider {
+  background-color: #161616;
+}
+
+
+input:checked + .slider:after {
+  transform: translateX(26px);
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme header {
+  background-color: #1d4d72;
+  color: #ffffff;
+}
+
+.dark-theme footer {
+  background-color: #1d4d72;
+  color: #ffffff;
+}
+
+.dark-theme a {
+  color: #ffffff;
+}
+
+.dark-theme a:hover {
+  color: #bbb;
+}
