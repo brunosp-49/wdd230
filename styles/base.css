@@ -259,3 +259,7 @@ input:checked + .slider:after {
   margin:  0;
   white-space: nowrap;
 }
+
+#frame{
+  border: 0
+}
