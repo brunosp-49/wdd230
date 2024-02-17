@@ -52,6 +52,19 @@
     </header>
     <main>
       <div class="hero-image">
+        <img
+          src="./images/image-task-large.webp"
+          alt="Hero Image"
+          class="hero-background-image"
+          srcset="
+            ./images/image-task-small.webp   480w,
+            ./images/image-task-medium.webp  768w,
+            ./images/image-task-large.webp  1024w
+          "
+          sizes="(max-width:  480px)  480px,
+              (max-width:  768px)  768px,
+              1024px"
+        />
         <a href="#join" class="btn call-to-action">Join the Chamber</a>
       </div>
       <div class="grid-container">
@@ -77,9 +90,9 @@
             <li class="card">
               <h2>Weather</h2>
               <hr />
-              <h6>Temp: __C</h6>
-              <p></p>
-              <h6>Wind: __ M/S</h6>
+              <h6>Temp: <span id="temperature">__°C</span></h6>
+              <h6>Wind: <span id="windSpeed">__ M/S</span></h6>
+              <h6>Wind Chill: <span id="windChill">__°C</span></h6>
               <h6>Humidity: __%</h6>
             </li>
           </ul>
@@ -139,5 +152,6 @@
       <p id="lastModifiedDate"></p>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>
