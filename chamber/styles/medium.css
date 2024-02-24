@@ -52,14 +52,14 @@
     display: block;
   }
 
-  .social-container{
+  .social-container {
     display: none;
   }
 
   #mobileMenuButton::before {
     content: "☰";
   }
-  
+
   #mobileMenuButton.open::before {
     content: "X";
   }

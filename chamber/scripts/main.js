@@ -29,16 +29,12 @@ function call() {
       const weatherCard = document.querySelector(".weather-card");
       const tempElement = weatherCard.querySelector("h6:nth-child(3)");
       const windElement = weatherCard.querySelector("h6:nth-child(5)");
-      const humidityElement = weatherCard.querySelector("h6:nth-child(6)");
-      const descriptionElement = weatherCard.querySelector("p");
 
       // Convert temperature from Kelvin to Celsius
       const tempInCelsius = Math.round((data.main.temp - 273.15) * 10) / 10;
 
       tempElement.textContent = `${tempInCelsius}°C`;
       windElement.textContent = `Wind: ${data.wind.speed} m/s`;
-      humidityElement.textContent = `Humidity: ${data.main.humidity}%`;
-      descriptionElement.textContent = data.weather[0].description;
     })
     .catch((error) => console.error("Error:", error));
 }

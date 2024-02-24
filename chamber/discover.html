@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My site to help my city" />
+    <meta name="author" content="Bruno Siqueira de Paulo" />
+    <title>Chamber of Commerce São José dos Campos</title>
+    <meta
+      property="og:title"
+      content="Chamber of Commerce São José dos Campos"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://github.com/brunosp-49/wdd230/assets/99160023/8891e086-b60f-4f8f-81e2-71fb451232d8"
+    />
+    <meta
+      property="og:url"
+      content="https://brunosp-49.github.io/wdd230/chamber/index.html"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="images/logo.webp" alt="Chamber of Commerce Logo" id="logo" />
+      </div>
+      <div class="social-container">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+          alt="Linkedin logo"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+          alt="Facebook logo"
+        />
+      </div>
+      <button id="mobileMenuButton" class="mobile-menu-button"></button>
+      <nav id="desktopNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#discover">Discover</a></li>
+          <li><a href="#directory">Directory</a></li>
+          <li><a href="#join">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="mainDiscover">
+      <div class="ccsc-grid-container">
+        <div class="ccsc-sidebar">
+          <div class="datepicker">
+            <div class="datepicker-top">
+              <div class="btn-group">
+                <button class="tag">Today</button>
+                <button class="tag">Tomorrow</button>
+                <button class="tag">In 2 days</button>
+              </div>
+              <div class="month-selector">
+                <button class="arrow">
+                  <i class="material-icons">chevron_left</i>
+                </button>
+                <span class="month-name">December 2020</span>
+                <button class="arrow">
+                  <i class="material-icons">chevron_right</i>
+                </button>
+              </div>
+            </div>
+            <div class="datepicker-calendar">
+              <span class="day">Mo</span>
+              <span class="day">Tu</span>
+              <span class="day">We</span>
+              <span class="day">Th</span>
+              <span class="day">Fr</span>
+              <span class="day">Sa</span>
+              <span class="day">Su</span>
+              <button class="date faded">30</button>
+              <button class="date">1</button>
+              <button class="date">2</button>
+              <button class="date">3</button>
+              <button class="date">4</button>
+              <button class="date">5</button>
+              <button class="date">6</button>
+              <button class="date">7</button>
+              <button class="date">8</button>
+              <button class="date current-day">9</button>
+              <button class="date">10</button>
+              <button class="date">11</button>
+              <button class="date">12</button>
+              <button class="date">13</button>
+              <button class="date">14</button>
+              <button class="date">15</button>
+              <button class="date">16</button>
+              <button class="date">17</button>
+              <button class="date">18</button>
+              <button class="date">19</button>
+              <button class="date">20</button>
+              <button class="date">21</button>
+              <button class="date">22</button>
+              <button class="date">23</button>
+              <button class="date">24</button>
+              <button class="date">25</button>
+              <button class="date">26</button>
+              <button class="date">27</button>
+              <button class="date">28</button>
+              <button class="date">29</button>
+              <button class="date">30</button>
+              <button class="date">31</button>
+              <button class="date faded">1</button>
+              <button class="date faded">2</button>
+              <button class="date faded">3</button>
+            </div>
+          </div>
+        </div>
+        <div class="ccsc-main-area">
+          <div class="ccsc-image-gallery">
+            <!-- Images will be dynamically added here -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>brunospdev@gmail.com</p>
+      <p>Developed by: Bruno Siqueira de Paulo</p>
+      <p>Project for WDD 230</p>
+      <p id="lastModifiedDate"></p>
+    </footer>
+    <script src="scripts/discover.js"></script>
+  </body>
+</html>
