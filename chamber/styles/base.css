@@ -17,10 +17,10 @@ main {
 
 body {
   max-width: 100vw;
+  width: 100vw;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -31,17 +31,13 @@ nav {
   height: 100%;
   width: 30%;
   padding-right: 40px;
-  z-index:  1000;
+  z-index: 1000;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   float: right;
-}
-
-nav, nav * {
-  pointer-events: auto;
 }
 
 .social-container {
@@ -330,4 +326,64 @@ hr {
   position: absolute;
   top: 15px;
   right: 30px;
+}
+
+#mainDiscover {
+  padding-top: 8vh;
+  padding: 10vh 0 0 0;
+}
+
+.ccsc-sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: auto;
+  row-gap: 10px;
+  height: 120vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 25px;
+  border: 1px solid var(--other2);
+}
+
+.leftCard {
+  align-self: center;
+  justify-self: center;
+  padding-left: 2%;
+  width: 80%;
+  min-height: 20vh;
+  background-color: #9d9d9d;
+  border: 1px solid var(--mainFade);
+  border-radius: 2px;
+}
+
+.ccsc-grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.ccsc-main-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  width: 90%;
+  row-gap: 0px;
+  border: 1px solid var(--other2);;
+}
+
+.ccsc-image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.ccsc-image-gallery img {
+  width: 90%;
+  height: 95%;
+  object-fit: cover;
+}
+
+.ccsc-image-gallery img:hover {
+  opacity: 0.5;
 }

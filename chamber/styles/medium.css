@@ -103,4 +103,20 @@
     padding: 10px;
     text-align: left;
   }
+
+  .ccsc-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .ccsc-sidebar {
+    margin-left: 0;
+  }
+
+  .ccsc-main-area {
+    width: 100%;
+  }
+
+  .ccsc-image-gallery img:hover {
+    transform: none;
+  }
 }
