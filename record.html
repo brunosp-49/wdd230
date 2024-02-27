@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Confirmation</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <label for="darkModeToggle" class="dark-mode-switch">
+            <input type="checkbox" id="darkModeToggle" />
+            <span class="slider"></span>
+        </label>
+        <img src="images/profile.webp" alt="Profile Picture" id="header-image" />
+        <h1>Bruno Siqueira de Paulo</h1>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="#" title="Home">Home</a>
+        <a href="lesson03/chamber-site-plan.html" title="Site Plan" class="active">Site Plan</a>
+        <a href="chamber/index.html" title="Chamber">Chamber</a>
+        <a href="https://byu.edu/" target="_blank" title="BYU-Idaho">BYU-Idaho</a>
+        <a href="lesson05/bom.html" target="_blank" title="Scriptures">Scriptures</a>
+    </nav>
+    <main>
+        <h2>Form Submission Confirmation</h2>
+        <p>Your form has been submitted successfully. Thank you for your submission!</p>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span></p>
+        <p>Bruno Siqueira de Paulo</p>
+        <p>Brazil</p>
+        <p id="date">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+    <script type="text/javascript" src="scripts/getdates.js"></script>
+    <script type="text/javascript" src="scripts/menuScript.js"></script>
+</body>
+</html>

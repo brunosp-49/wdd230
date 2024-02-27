@@ -1,0 +1,53 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #f1f1f1;
+  --highlight-color: #ff6347;
+}
+*{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+
+main {
+  height: 100vh;
+}
+
+nav a {
+  margin: 0 10px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: var(--highlight-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
