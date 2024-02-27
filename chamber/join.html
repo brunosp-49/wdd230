@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My site to help my city" />
+    <meta name="author" content="Bruno Siqueira de Paulo" />
+    <title>Join</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="images/logo.webp" alt="Chamber of Commerce Logo" id="logo" />
+      </div>
+      <div class="social-container">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+          alt="Linkedin logo"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+          alt="Facebook logo"
+        />
+      </div>
+      <button id="mobileMenuButton" class="mobile-menu-button"></button>
+      <nav id="desktopNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="#directory">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="join-main">
+      <form action="thankyou.html" method="get" id="join-form">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+
+        <label for="title">Title or Position:</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          required
+          pattern="[A-Za-z\s\-]{7,}"
+        />
+
+        <label for="email">Contact Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;"
+          placeholder="example@example.com"
+        />
+
+        <label for="phone">Mobile Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="organization">Business/Organization Name:</label>
+        <input type="text" id="organization" name="organization" required />
+
+        <label for="membership">Membership Level:</label>
+        <select id="membership" name="membership" required>
+          <option value="">Select Membership Level</option>
+          <option value="NP">NP Membership (Non-Profit) - Free</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select>
+
+        <label for="description">Organization Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <input type="hidden" id="timestamp" name="timestamp" />
+
+        <button type="submit">Submit Information</button>
+      </form>
+    </main>
+    <footer>
+      <p>brunospdev@gmail.com</p>
+      <p>Developed by: Bruno Siqueira de Paulo</p>
+      <p>Project for WDD 230</p>
+      <p id="lastModifiedDate"></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
+  </body>
+</html>

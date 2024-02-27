@@ -387,3 +387,30 @@ hr {
 .ccsc-image-gallery img:hover {
   opacity: 0.5;
 }
+
+#join-form{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#join-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  background-color: #fff;
+}
+
+#join-thank{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  background-color: #fff;
+}
