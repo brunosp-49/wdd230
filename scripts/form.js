@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
 
   form.addEventListener("submit", function (event) {
-    console.log({password: password.value, confirmPassword: confirmPassword.value})
     if (password.value !== confirmPassword.value) {
       alert("Passwords do not match. Please try again.");
       password.value = "";
