@@ -1,59 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bruno Siqueira de Paulo" />
+    <meta
+      name="description"
+      content="Bruno Siqueira, that is my personal website to the course WDD 230"
+    />
     <title>Form Example</title>
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/base.css" />
     <link rel="stylesheet" type="text/css" href="styles/larger.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <label for="darkModeToggle" class="dark-mode-switch">
-            <input type="checkbox" id="darkModeToggle" />
-            <span class="slider"></span>
-        </label>
-        <img src="images/profile.webp" alt="Profile Picture" id="header-image" />
-        <h1>Bruno Siqueira de Paulo</h1>
+      <label for="darkModeToggle" class="dark-mode-switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <span class="slider"></span>
+      </label>
+      <img src="images/profile.webp" alt="Profile Picture" id="header-image" />
+      <h1>Bruno Siqueira de Paulo</h1>
     </header>
     <button id="menu"></button>
     <nav class="navigation">
-        <a href="index.html" title="Home">Home</a>
-        <a href="lesson03/chamber-site-plan.html" title="Site Plan" class="active">Site Plan</a>
-        <a href="chamber/index.html" title="Chamber">Chamber</a>
-        <a href="https://byu.edu/" target="_blank" title="BYU-Idaho">BYU-Idaho</a>
-        <a href="lesson05/bom.html" target="_blank" title="Scriptures">Scriptures</a>
+      <a href="index.html" title="Home">Home</a>
+      <a href="lesson03/chamber-site-plan.html" title="Site Plan" class="active"
+        >Site Plan</a
+      >
+      <a href="chamber/index.html" title="Chamber">Chamber</a>
+      <a href="https://byu.edu/" target="_blank" title="BYU-Idaho">BYU-Idaho</a>
+      <a href="lesson05/bom.html" target="_blank" title="Scriptures"
+        >Scriptures</a
+      >
     </nav>
     <main>
-        <form action="record.html" method="get">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
-            
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
-            
-            <label for="rating">Page Rating</label>
-            <input type="range" id="rating" name="rating" min="1" max="10" step="1">
-            
-            <button type="submit">Submit</button>
-        </form>
+      <form action="record.html" method="get">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          pattern="[a-zA-Z0-9]{8,}"
+          required
+        />
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+          title="Please enter a valid email address"
+          required
+        />
+
+        <label for="rating">Page Rating</label>
+        <input
+          type="range"
+          id="rating"
+          name="rating"
+          min="1"
+          max="10"
+          step="1"
+        />
+
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span></p>
-        <p>Bruno Siqueira de Paulo</p>
-        <p>Brazil</p>
-        <p id="date">Last Modification: <span id="lastModified"></span></p>
+      <p>&copy; <span id="year"></span></p>
+      <p>Bruno Siqueira de Paulo</p>
+      <p>Brazil</p>
+      <p id="date">Last Modification: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/form.js"></script>
     <script type="text/javascript" src="scripts/getdates.js"></script>
     <script type="text/javascript" src="scripts/menuScript.js"></script>
-</body>
+  </body>
 </html>
