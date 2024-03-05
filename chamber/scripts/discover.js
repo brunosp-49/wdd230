@@ -1,28 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function (
-      entries,
-      observer
-    ) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target;
-          lazyImage.src = lazyImage.dataset.src;
-          lazyImage.classList.remove("lazy");
-          lazyImageObserver.unobserve(lazyImage);
-        }
-      });
-    });
-
-    lazyImages.forEach(function (lazyImage) {
-      lazyImageObserver.observe(lazyImage);
-    });
-  }
-});
-
-
 document.addEventListener("DOMContentLoaded", function() {
   let lastVisit = localStorage.getItem("lastVisit");
   let now = Date.now();
@@ -39,9 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     visitMessage = "Welcome! Let us know if you have any questions.";
   }
 
-  // Display the visit message in the new leftCard
   document.getElementById("visitMessage").textContent = visitMessage;
 
-  // Update the last visit date in LocalStorage
   localStorage.setItem("lastVisit", now);
 });
