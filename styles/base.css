@@ -264,3 +264,8 @@ input:checked + .slider:after {
   text-align: center;
   font-size: 24px;
 }
+
+#dynamic-learning-activities{
+  padding-left: 2%;
+  padding-top: 2%;
+}
