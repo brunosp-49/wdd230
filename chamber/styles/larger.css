@@ -1,28 +1,41 @@
-@media (min-width:  768px) and (max-width:  1355px) {
-    /* Adjustments for tablets and smaller laptops */
-  
-    /* Example: Increase font size for better readability */
-    body {
-      font-size:  18px;
-    }
-  
-    /* Example: Adjust grid layout for better use of space */
-    .ccsc-grid-container {
-      grid-template-columns:  1fr  2fr; /* Adjust column sizes as needed */
-    }
-
-    nav{
-        width: 60%;
-    }
-  
-    /* Example: Adjust image sizes for better display */
-    .ccsc-image-gallery img {
-      width:  80%; /* Adjust width as needed */
-    }
-
-    .social-container {
-        display: none;
-      }
-  
-    /* Add more adjustments as needed */
+@media (min-width: 769px){
+  body {
+    font-size: 18px;
   }
+
+  .ccsc-grid-container {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  nav {
+    width: 60%;
+  }
+
+  .ccsc-image-gallery img {
+    width: 80%;
+  }
+
+  .social-container {
+    display: none;
+  }
+  .member-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .member-list .member-list-item {
+    flex-direction: row;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1600px){
+  .member-list .member-list-item {
+    flex-direction: column;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

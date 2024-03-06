@@ -1,0 +1,29 @@
+[
+    {
+       "name": "Embraer",
+       "address": "123 Main St",
+       "phone": "555-1234",
+       "website": "https://embraer.com/",
+       "image": "./images/embraer.webp",
+       "membershipLevel": "Gold",
+       "otherInfo": "Embraer is leading the way in innovative technology solutions."
+    },
+    {
+       "name": "GM",
+       "address": "456 Market St",
+       "phone": "555-5678",
+       "website": "https://www.gm.com/",
+       "image": "./images/gm.webp",
+       "membershipLevel": "Silver",
+       "otherInfo": "GM is known for its sustainable practices and eco-friendly products."
+    },
+    {
+        "name": "Petrobras",
+        "address": "456 Market St",
+        "phone": "555-5678",
+        "website": "https://petrobras.com.br/",
+        "image": "./images/petrobras.webp",
+        "membershipLevel": "Silver",
+        "otherInfo": "Petrobras specializes in providing top-notch customer service and support."
+     }
+   ]
