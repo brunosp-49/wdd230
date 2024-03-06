@@ -53,17 +53,14 @@ nav ul {
   cursor: pointer;
 }
 
-nav ul li {
+nav ul li, nav a {
   display: inline;
   margin-right: 35px;
-}
-
-nav a {
   font-size: 20px;
   cursor: pointer;
   text-decoration: none;
   color: var(--white);
-}
+ }
 
 nav a:hover {
   font-weight: bold;
