@@ -469,6 +469,12 @@ hr {
   margin: 10px;
 }
 
+#mainName{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #meet-and-greet-banner {
   position: fixed;
   display: flex;
