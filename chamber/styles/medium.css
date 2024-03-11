@@ -3,6 +3,15 @@
     padding: 0;
     background-color: var(--main);
   }
+
+  #meet-and-greet-banner {
+    width: 80%;
+   }
+
+  .forecast-container {
+    grid-template-columns: 1fr;
+ }
+  
   #mobileMenuButton {
     margin: 0;
     background-color: #353535;

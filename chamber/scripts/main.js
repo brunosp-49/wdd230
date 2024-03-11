@@ -16,8 +16,9 @@ window.onload = function () {
   }
 };
 
-const apiKey = "95648dccd7a252cc6c1dc3b174ae614f";
+const apiKey = "dfb78a945b43593a207edfd2f02237f2";
 const cityName = "São José dos Campos";
+const cityId = "3448636";
 
 function call() {
   fetch(
@@ -25,19 +26,57 @@ function call() {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      const weatherCard = document.querySelector(".weather-card");
-      const tempElement = weatherCard.querySelector("h6:nth-child(3)");
-      const windElement = weatherCard.querySelector("h6:nth-child(5)");
-
-      // Convert temperature from Kelvin to Celsius
       const tempInCelsius = Math.round((data.main.temp - 273.15) * 10) / 10;
-
-      tempElement.textContent = `${tempInCelsius}°C`;
-      windElement.textContent = `Wind: ${data.wind.speed} m/s`;
+      document.getElementById("temperature").textContent = `${tempInCelsius}°C`;
+      document.getElementById("current-description").textContent =
+        data.weather[0].description;
+      document.getElementById(
+        "humidity"
+      ).textContent = `${data.main.humidity}%`;
     })
     .catch((error) => console.error("Error:", error));
 }
+
+function fetchForecast() {
+  fetch(
+     `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=metric&appid=${apiKey}`
+  )
+     .then((response) => response.json())
+     .then((data) => {
+       const forecastContainer = document.getElementById("forecast");
+       forecastContainer.classList.add("forecast-container"); 
+ 
+       const forecastsByDay = data.list.reduce((acc, item) => {
+         const forecastDate = new Date(item.dt_txt).toLocaleDateString();
+         if (!acc[forecastDate]) {
+           acc[forecastDate] = item;
+         }
+         return acc;
+       }, {});
+ 
+       const nextThreeDaysForecast = Object.values(forecastsByDay).slice(0, 3);
+ 
+       nextThreeDaysForecast.forEach(dayForecast => {
+         const forecastItem = document.createElement("div");
+         forecastItem.classList.add("forecast-item"); 
+ 
+         const avgTemp = dayForecast.main.temp; 
+ 
+         const forecastDate = document.createElement("div");
+         forecastDate.textContent = `${new Date(dayForecast.dt_txt).toLocaleDateString()}`;
+         forecastItem.appendChild(forecastDate);
+ 
+         const forecastTemperature = document.createElement("div");
+         forecastTemperature.textContent = `${Math.round(avgTemp)}°C`;
+         forecastItem.appendChild(forecastTemperature);
+ 
+         forecastContainer.appendChild(forecastItem);
+       });
+     })
+     .catch((error) => console.error("Error fetching forecast data:", error));
+ }
+
+fetchForecast();
 
 call();
 
@@ -54,6 +93,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('timestamp').value = Date.now();
+const today = new Date();
+const dayOfWeek = today.getDay();
+if (dayOfWeek === 1 || dayOfWeek === 2 || dayOfWeek === 3) {
+  document.getElementById("meet-and-greet-banner").style.display = "flex";
+}
+
+// Close the banner
+document.getElementById("close-banner").addEventListener("click", () => {
+  document.getElementById("meet-and-greet-banner").style.display = "none";
 });
