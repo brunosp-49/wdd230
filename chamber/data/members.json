@@ -25,5 +25,14 @@
         "image": "./images/petrobras.webp",
         "membershipLevel": "Silver",
         "otherInfo": "Petrobras specializes in providing top-notch customer service and support."
-     }
+     },
+     {
+      "name": "Ericsson",
+      "address": "456 Market St",
+      "phone": "555-5678",
+      "website": "https://www.ericsson.com/en",
+      "image": "./images/ericsson.webp",
+      "membershipLevel": "Gold",
+      "otherInfo": "Ericsson specializes in providing top-notch customer service and support."
+   }
    ]
