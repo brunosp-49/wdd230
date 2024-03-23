@@ -34,5 +34,41 @@
       "image": "./images/ericsson.webp",
       "membershipLevel": "Gold",
       "otherInfo": "Ericsson specializes in providing top-notch customer service and support."
+   },
+   {
+      "name": "Boeing",
+      "address": "456 Market St",
+      "phone": "555-5678",
+      "website": "https://www.boeing.com/",
+      "image": "./images/boeing.webp",
+      "membershipLevel": "Gold",
+      "otherInfo": "Boeing specializes in providing top-notch customer service and support."
+   },
+   {
+      "name": "Johnson & Johnson",
+      "address": "456 Market St",
+      "phone": "555-5678",
+      "website": "https://www.jnjbrasil.com.br/",
+      "image": "./images/j&j.webp",
+      "membershipLevel": "Gold",
+      "otherInfo": "Johnson & Johnson specializes in providing top-notch customer service and support."
+   },
+   {
+      "name": "Panasonic",
+      "address": "456 Market St",
+      "phone": "555-5678",
+      "website": "https://www.panasonic.com/br/",
+      "image": "./images/panasonic.webp",
+      "membershipLevel": "Gold",
+      "otherInfo": "Panasonic specializes in providing top-notch customer service and support."
+   },
+   {
+      "name": "Avibras",
+      "address": "456 Market St",
+      "phone": "555-5678",
+      "website": "https://www.avibras.com.br/site/",
+      "image": "./images/avibras.webp",
+      "membershipLevel": "Gold",
+      "otherInfo": "Avibras specializes in providing top-notch customer service and support."
    }
    ]
