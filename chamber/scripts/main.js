@@ -9,7 +9,6 @@ window.onload = function () {
   var lastModifiedElement = document.getElementById("lastModifiedDate");
 
   if (lastModifiedElement) {
-    console.log("Last Modified Date:", formattedDate);
     lastModifiedElement.textContent = formattedDate;
   } else {
     console.error('Element with id "lastModified" not found.');

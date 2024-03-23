@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("https://brunosp-49.github.io/wdd230/chamber/data/members.json")
     .then((response) => response.json())
     .then((data) => {
-      console.log({ data });
       const filteredMembers = data.filter(
         (member) =>
           member.membershipLevel === "Gold" ||
