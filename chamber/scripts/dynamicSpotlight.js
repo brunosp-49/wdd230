@@ -31,7 +31,7 @@ function displaySpotlights(members) {
          <div class="company-info">
            <h3 class="company-name">${member.name}</h3>
            <p class="company-description">${member.otherInfo}</p>
-           <a href="#" class="cta-button">Visit Website</a>
+           <a href="${member.website}"  target="_blank" class="cta-button">Visit Website</a>
          </div>
        `;
     spotlightContainer.appendChild(spotlightCard);
