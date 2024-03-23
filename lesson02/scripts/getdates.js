@@ -10,7 +10,6 @@ window.onload = function() {
 
     // Check if the element exists and log the formatted date
     if (lastModifiedElement) {
-        console.log('Last Modified Date:', formattedDate);
         // Set the text content of the 'lastModified' element to the formatted date
         lastModifiedElement.textContent = formattedDate;
     } else {

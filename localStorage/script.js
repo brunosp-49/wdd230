@@ -3,7 +3,6 @@ const body = document.body;
 
 // Check LocalStorage for saved theme preference
 const savedTheme = localStorage.getItem("theme");
-console.log(savedTheme);
 
 if (savedTheme) {
   body.classList.add(savedTheme);
