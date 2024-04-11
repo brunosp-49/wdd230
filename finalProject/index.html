@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Scoots - Motor Scooter Rental" />
     <meta name="author" content="Bruno Siqueira de Paulo" />
@@ -18,8 +18,17 @@
     <meta name="author" content="Bruno Siqueira de Paulo" />
     <title>Scoots - Motor Scooter Rental</title>
     <link rel="stylesheet" href="styles/base.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
+    <div id="high-temp-message" class="closeable-message">
+      <p>High Temperature for Today: <span id="high-temp"></span>°C</p>
+      <button onclick="closeMessage()">❌</button>
+    </div>
     <header>
       <h1>Welcome to Scoots!</h1>
       <nav>
@@ -30,21 +39,45 @@
       </nav>
     </header>
     <main>
-      <section id="weather-info"></section>
       <section>
-        <h2>Make a Reservation</h2>
+        <img
+          id="hero-image"
+          alt="scooters riding"
+          src="../images/hero-image.jpg"
+        />
+      </section>
+      <section>
+        <h1>Make a Reservation</h1>
         <p>Reserve your scooter today!</p>
         <a href="reservations.html" class="cta-button">Reserve Now</a>
       </section>
+      <hr/>
+      <section id="weather-info"></section>
+      <hr/>
       <section>
         <h2>Our Rentals</h2>
-        <p>Explore our range of scooters, ATVs, and jeeps.</p>
-        <a href="rentals.html">View Rentals</a>
+        <div id="rentals-table"></div>
+      </section>
+      <hr/>
+      <section>
+        <h2>Get in contact</h2>
+        <div id="contact-links-container">
+          <a href="wwww.facebook.com" target="_blank" rel="noopener noreferrer">
+            <i class="devicon-facebook-plain colored"></i>
+          </a>
+          <a href="wwww.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <i class="devicon-linkedin-plain colored"></i>
+          </a>
+          <a href="mailto:info@scoots.com" target="_blank" rel="noopener noreferrer">
+            <i class="devicon-google-plain colored"></i>
+          </a>
+        </div>
       </section>
     </main>
     <footer>
       <p>&copy; 2023 Scoots. All rights reserved.</p>
     </footer>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/rentals.js"></script>
   </body>
 </html>

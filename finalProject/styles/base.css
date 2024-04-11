@@ -1,41 +1,138 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  height: 150px;
+  text-align: center;
+}
+
+main {
+  min-height: calc(100vh - 290px);
 }
 
 nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 .cta-button {
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  height: 90px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#hero-image {
+  height: 50vh;
+}
+
+.closeable-message {
+  background-color: #f9ed69;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact-links-container {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 34px;
+}
+
+#contact-links-container a {
+  text-decoration: none;
+}
+
+hr {
+  margin: 25px 0;
+}
+
+#rentals-table table,
+#rentals-table th,
+#rentals-table td {
+  text-align: center;
+}
+
+#rentals-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#rentals-table th,
+#rentals-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#rentals-table table {
+  border: 1px solid #ddd;
+}
+
+#form-container,
+#reservation-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.agreement-container {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+  width: 100%;
+}
+
+#contact-down-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#reservation-form{
+    margin-left: 25px;
 }
