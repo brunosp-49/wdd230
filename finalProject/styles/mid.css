@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    #contact-links-container {
+       width: 100%;
+       flex-direction: column;
+    }
+   
+    #rentals-table {
+       overflow-x: auto;
+    }
+   
+    .form-group {
+       flex-direction: column;
+    }
+   
+    #contact-down-container {
+       flex-direction: column;
+    }
+
+    #hero-image {
+        width: 90%;
+      }
+   }

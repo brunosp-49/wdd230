@@ -59,7 +59,7 @@ section {
 }
 
 #hero-image {
-  height: 50vh;
+  width: 70%;
 }
 
 .closeable-message {
@@ -121,6 +121,7 @@ hr {
 
 .form-group {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin: 8px 0;
